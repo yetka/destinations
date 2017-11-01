@@ -1,0 +1,7 @@
+.show-destination:hover {
+  background-color: yellow;
+}
+
+#display-destination {
+  display: none;
+}
