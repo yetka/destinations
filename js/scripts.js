@@ -10,7 +10,7 @@ function Destination(name, country, time, notes) {
 
 
 $(document).ready(function() {
-  var collections = [];
+  
   $("#destinations").submit(function(event) {
     event.preventDefault();
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
     $("#destinationNotes").val("");
 
     var newDestination = new Destination(name, country, time, notes);
-    collections.push(newDestination)
+
     $(".display").append('<div class="show-destination">' +
                         '<li>' +
                          newDestination.name +
